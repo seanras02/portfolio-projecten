@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background:#ee1515;
+    padding: 4rem;
+}
+
+.card{
+    list-style: none;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 2);
+}
+
+.cards{
+    height: 85vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12 ,1fr) ;  /* 12 colommen horizontaal */
+    grid-template-rows: repeat(12 ,1fr) ;  /* 12 colommen verticaal */
+    gap: 2rem; /*IMPORTANT*/
+}
+
+.card--first{
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card--first > input{
+    width: 70%;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem;
+}
+
+.card--second{
+    grid-column:5 / 13;
+    grid-row: 1 / 8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap:2rem;
+    font-size: 1.5rem;
+    
+}
+.card--second > img{
+    width: 15rem;
+}
+
+
+.card--third{
+    /*gebruik hierbij vooral inspect element!*/
+
+    grid-row: 7 / 13;  /*begint bij rij 1 naar 3 */ /*laat grid template-row goed werken omdat je het specifiek aan moet geven*/
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--third > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.card--third > button{
+    width: 15rem;
+    height: 6rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: none;
+    background: #ee1515;
+    color: #eee;
+    border-radius: 0.5rem;
+
+
+}
+
+
+.card--fourth{
+    grid-row:8 / 13;
+    grid-column: 5 / 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--fifth{
+    grid-row: 8 / 13;
+    grid-column:10 / 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--sixth{
+    grid-row: 7/13;
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*in een media query is 1 rem altijd een user zijn fontsize */
+@media screen and (max-width:87.5rem){
+    .card--second{
+        grid-row: 1 / 8;
+    }
+}
+
+@media screen and (max-width: 62.5rem) {
+    body{
+        background:#ee1515;
+    }
+
+    .card--second{
+        display: none;
+    }
+
+    .card--first{
+        display: none;
+    }
+
+    .card--third{
+        grid-row:1 / 13;
+        grid-column: 1 / 13;
+    }
+
+    .card--fourth{
+        display: none;
+    }
+
+    .card--fifth{
+        display: none;
+    }
+
+    .card--sixth{
+       display: none;
+    }
+}
+
+
+/* css grid shit */
+
+
