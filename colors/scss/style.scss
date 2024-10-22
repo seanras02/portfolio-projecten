@@ -1,0 +1,8 @@
+@use "./abstracts/reset";
+@use "./base.scss";
+
+/* components */
+@use "./components/colors/colors.scss";
+
+/* Media Query */
+@use "./abstracts/mediaqueries";

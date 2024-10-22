@@ -1,0 +1,406 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body {
+  min-height: 100vh;
+  padding: 4rem;
+  background: linear-gradient(#B4B4B8, 60%, #C7C8CC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+/* components */
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popupCard {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  list-style: none;
+  background: white;
+  max-width: 170rem;
+}
+.colors__color {
+  width: 25rem;
+  flex-grow: 1;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid rgba(128, 128, 128, 0.2);
+  overflow: hidden;
+  transition: 0.2s;
+  animation-name: popupCard;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
+}
+.colors__color:nth-last-of-type(1) {
+  animation-delay: 0.01s;
+}
+.colors__color:nth-last-of-type(2) {
+  animation-delay: 0.02s;
+}
+.colors__color:nth-last-of-type(3) {
+  animation-delay: 0.03s;
+}
+.colors__color:nth-last-of-type(4) {
+  animation-delay: 0.04s;
+}
+.colors__color:nth-last-of-type(5) {
+  animation-delay: 0.05s;
+}
+.colors__color:nth-last-of-type(6) {
+  animation-delay: 0.06s;
+}
+.colors__color:nth-last-of-type(7) {
+  animation-delay: 0.07s;
+}
+.colors__color:nth-last-of-type(8) {
+  animation-delay: 0.08s;
+}
+.colors__color:nth-last-of-type(9) {
+  animation-delay: 0.09s;
+}
+.colors__color:nth-last-of-type(10) {
+  animation-delay: 0.1s;
+}
+.colors__color:nth-last-of-type(11) {
+  animation-delay: 0.11s;
+}
+.colors__color:nth-last-of-type(12) {
+  animation-delay: 0.12s;
+}
+.colors__color:nth-last-of-type(13) {
+  animation-delay: 0.13s;
+}
+.colors__color:nth-last-of-type(14) {
+  animation-delay: 0.14s;
+}
+.colors__color:nth-last-of-type(15) {
+  animation-delay: 0.15s;
+}
+.colors__color:nth-last-of-type(16) {
+  animation-delay: 0.16s;
+}
+.colors__color:nth-last-of-type(17) {
+  animation-delay: 0.17s;
+}
+.colors__color:nth-last-of-type(18) {
+  animation-delay: 0.18s;
+}
+.colors__color:nth-last-of-type(19) {
+  animation-delay: 0.19s;
+}
+.colors__color:nth-last-of-type(20) {
+  animation-delay: 0.2s;
+}
+.colors__color:nth-last-of-type(21) {
+  animation-delay: 0.21s;
+}
+.colors__color:nth-last-of-type(22) {
+  animation-delay: 0.22s;
+}
+.colors__color:nth-last-of-type(23) {
+  animation-delay: 0.23s;
+}
+.colors__color:nth-last-of-type(24) {
+  animation-delay: 0.24s;
+}
+.colors__color:nth-last-of-type(25) {
+  animation-delay: 0.25s;
+}
+.colors__color:nth-last-of-type(26) {
+  animation-delay: 0.26s;
+}
+.colors__color:nth-last-of-type(27) {
+  animation-delay: 0.27s;
+}
+.colors__color:nth-last-of-type(28) {
+  animation-delay: 0.28s;
+}
+.colors__color:nth-last-of-type(29) {
+  animation-delay: 0.29s;
+}
+.colors__color:nth-last-of-type(30) {
+  animation-delay: 0.3s;
+}
+.colors__color:nth-last-of-type(31) {
+  animation-delay: 0.31s;
+}
+.colors__color:nth-last-of-type(32) {
+  animation-delay: 0.32s;
+}
+.colors__color:nth-last-of-type(33) {
+  animation-delay: 0.33s;
+}
+.colors__color:nth-last-of-type(34) {
+  animation-delay: 0.34s;
+}
+.colors__color:nth-last-of-type(35) {
+  animation-delay: 0.35s;
+}
+.colors__color:nth-last-of-type(36) {
+  animation-delay: 0.36s;
+}
+.colors__color:nth-last-of-type(37) {
+  animation-delay: 0.37s;
+}
+.colors__color:nth-last-of-type(38) {
+  animation-delay: 0.38s;
+}
+.colors__color:nth-last-of-type(39) {
+  animation-delay: 0.39s;
+}
+.colors__color:nth-last-of-type(40) {
+  animation-delay: 0.4s;
+}
+.colors__color:nth-last-of-type(41) {
+  animation-delay: 0.41s;
+}
+.colors__color:nth-last-of-type(42) {
+  animation-delay: 0.42s;
+}
+.colors__color:nth-last-of-type(43) {
+  animation-delay: 0.43s;
+}
+.colors__color:nth-last-of-type(44) {
+  animation-delay: 0.44s;
+}
+.colors__color:nth-last-of-type(45) {
+  animation-delay: 0.45s;
+}
+.colors__color:nth-last-of-type(46) {
+  animation-delay: 0.46s;
+}
+.colors__color:nth-last-of-type(47) {
+  animation-delay: 0.47s;
+}
+.colors__color:nth-last-of-type(48) {
+  animation-delay: 0.48s;
+}
+.colors__color:nth-last-of-type(49) {
+  animation-delay: 0.49s;
+}
+.colors__color:nth-last-of-type(50) {
+  animation-delay: 0.5s;
+}
+.colors__color:nth-last-of-type(51) {
+  animation-delay: 0.51s;
+}
+.colors__color:nth-last-of-type(52) {
+  animation-delay: 0.52s;
+}
+.colors__color:nth-last-of-type(53) {
+  animation-delay: 0.53s;
+}
+.colors__color:nth-last-of-type(54) {
+  animation-delay: 0.54s;
+}
+.colors__color:nth-last-of-type(55) {
+  animation-delay: 0.55s;
+}
+.colors__color:nth-last-of-type(56) {
+  animation-delay: 0.56s;
+}
+.colors__color:nth-last-of-type(57) {
+  animation-delay: 0.57s;
+}
+.colors__color:nth-last-of-type(58) {
+  animation-delay: 0.58s;
+}
+.colors__color:nth-last-of-type(59) {
+  animation-delay: 0.59s;
+}
+.colors__color:nth-last-of-type(60) {
+  animation-delay: 0.6s;
+}
+.colors__color:nth-last-of-type(61) {
+  animation-delay: 0.61s;
+}
+.colors__color:nth-last-of-type(62) {
+  animation-delay: 0.62s;
+}
+.colors__color:nth-last-of-type(63) {
+  animation-delay: 0.63s;
+}
+.colors__color:nth-last-of-type(64) {
+  animation-delay: 0.64s;
+}
+.colors__color:nth-last-of-type(65) {
+  animation-delay: 0.65s;
+}
+.colors__color:nth-last-of-type(66) {
+  animation-delay: 0.66s;
+}
+.colors__color:nth-last-of-type(67) {
+  animation-delay: 0.67s;
+}
+.colors__color:nth-last-of-type(68) {
+  animation-delay: 0.68s;
+}
+.colors__color:nth-last-of-type(69) {
+  animation-delay: 0.69s;
+}
+.colors__color:nth-last-of-type(70) {
+  animation-delay: 0.7s;
+}
+.colors__color:nth-last-of-type(71) {
+  animation-delay: 0.71s;
+}
+.colors__color:nth-last-of-type(72) {
+  animation-delay: 0.72s;
+}
+.colors__color:nth-last-of-type(73) {
+  animation-delay: 0.73s;
+}
+.colors__color:nth-last-of-type(74) {
+  animation-delay: 0.74s;
+}
+.colors__color:nth-last-of-type(75) {
+  animation-delay: 0.75s;
+}
+.colors__color:nth-last-of-type(76) {
+  animation-delay: 0.76s;
+}
+.colors__color:nth-last-of-type(77) {
+  animation-delay: 0.77s;
+}
+.colors__color:nth-last-of-type(78) {
+  animation-delay: 0.78s;
+}
+.colors__color:nth-last-of-type(79) {
+  animation-delay: 0.79s;
+}
+.colors__color:nth-last-of-type(80) {
+  animation-delay: 0.8s;
+}
+.colors__color:nth-last-of-type(81) {
+  animation-delay: 0.81s;
+}
+.colors__color:nth-last-of-type(82) {
+  animation-delay: 0.82s;
+}
+.colors__color:nth-last-of-type(83) {
+  animation-delay: 0.83s;
+}
+.colors__color:nth-last-of-type(84) {
+  animation-delay: 0.84s;
+}
+.colors__color:nth-last-of-type(85) {
+  animation-delay: 0.85s;
+}
+.colors__color:nth-last-of-type(86) {
+  animation-delay: 0.86s;
+}
+.colors__color:nth-last-of-type(87) {
+  animation-delay: 0.87s;
+}
+.colors__color:nth-last-of-type(88) {
+  animation-delay: 0.88s;
+}
+.colors__color:nth-last-of-type(89) {
+  animation-delay: 0.89s;
+}
+.colors__color:nth-last-of-type(90) {
+  animation-delay: 0.9s;
+}
+.colors__color:nth-last-of-type(91) {
+  animation-delay: 0.91s;
+}
+.colors__color:nth-last-of-type(92) {
+  animation-delay: 0.92s;
+}
+.colors__color:nth-last-of-type(93) {
+  animation-delay: 0.93s;
+}
+.colors__color:nth-last-of-type(94) {
+  animation-delay: 0.94s;
+}
+.colors__color:nth-last-of-type(95) {
+  animation-delay: 0.95s;
+}
+.colors__color:nth-last-of-type(96) {
+  animation-delay: 0.96s;
+}
+.colors__color:nth-last-of-type(97) {
+  animation-delay: 0.97s;
+}
+.colors__color:nth-last-of-type(98) {
+  animation-delay: 0.98s;
+}
+.colors__color:nth-last-of-type(99) {
+  animation-delay: 0.99s;
+}
+.colors__color:nth-last-of-type(100) {
+  animation-delay: 1s;
+}
+.colors__color:hover {
+  cursor: pointer;
+  transform: translate(-0.5rem);
+}
+.colors__circle {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  transition: 0.2s transform;
+}
+.colors__circle--selected {
+  transform: scale(3);
+}
+.colors__text {
+  position: absolute;
+  animation-name: popup;
+  animation-duration: 0.6s;
+  display: none;
+}
+.colors__circle--selected + .colors__text {
+  display: block;
+}
+
+/* Media Query */
+@media screen and (max-width: 62.5rem) {
+  .colors__color {
+    width: 12.5rem;
+  }
+}
+@media screen and (max-width: 50rem) {
+  body {
+    padding: 2rem;
+  }
+  .colors__color {
+    width: 12rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
