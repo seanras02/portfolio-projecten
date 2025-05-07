@@ -88,12 +88,14 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .search-box input{
     color: #06283D;
     width: 80%;
 
+    border-radius: 20rem;
     font-size: 2.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -109,7 +111,7 @@ a{
 
 .search-box button{
     cursor: pointer;
-    width: 5rem;
+    width: 6rem;
     height: 5rem;
     color: #06283D;
     background: #dff6ff;
@@ -124,9 +126,10 @@ a{
 }
 
 .search-box i{
-    position: absolute;
-    color: #06283D;
-    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    color: "black";
+    font-size: 2rem;
 }
 
 .weather-box{
